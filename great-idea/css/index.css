@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,3 +59,216 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container{
+	width: 900px;
+	margin: auto;
+	}
+	
+	header{
+		display: flex;
+    	justify-content: space-between;
+		align-items: center;
+		margin: 10px 0px;
+	}
+	
+	header nav{
+		display: flex;
+    	justify-content: space-evenly;
+    	align-items: center;
+    	margin: 20px 4px;
+    	width: 700px;
+	}
+	
+	header nav a{
+    	width:100px;
+    	display:flex;
+		justify-content: space-between;
+		color: gray;
+		text-decoration: none;
+		font-size: 13px;
+	}
+	
+	header .logo{
+		margin-left: 90px;
+	}
+	
+	.cta{
+		margin: 50px 0px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    
+	}
+	
+	.ctaText{
+		display: flex;
+    	flex-direction:column;
+    	justify-content:center;
+    	align-items:center;
+		font-size: 70px;
+		text-align: center;
+	}
+	
+	.ctaText button{
+		display: flex;
+		box-sizing: border-box;
+		background-color: white;
+		font-size: 11px;
+		width: 100px;
+		justify-content: center;
+	}
+	
+	.cta img{
+		display: inline-block;
+		height: 300px;
+	}
+	
+	hr{
+		display: block;
+		border: 1px solid black;
+		margin: 30px 0px;
+	}
+	
+	.pageContent{
+	}
+	
+	.topPageContent{
+		display:flex;
+	}
+	
+	.content{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.top{
+	}
+	
+	.middle-img{
+		margin: 40px 0px;
+    	display: flex;
+	}
+	
+	.bottomPageContent{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.bottom{
+		width: 32%;
+	}
+	
+	.contact{
+		display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	}
+
+	.contact p{
+		padding: 12px 0px;
+	}
+	
+	.contact h4{
+		margin-top:40px;
+	}
+	
+	footer{
+		margin-bottom: 100px;
+    	margin-top: 50px;
+	}
+	
+	footer p{
+		display: flex;
+    	justify-content: center
+	}
+
+
+/*START SERVICES STYLE*/
+.container{
+}
+
+.servicesTop{
+	display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.servicesTop img{
+	display: flex;
+    margin: 10px 0px
+}
+
+.servicesTop h1{
+	margin: 20px 0px;
+    font-size: 25px;
+}
+
+.middleParent{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 800px;
+	
+}
+
+.middleChild{
+	display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 0px 0px;
+}
+
+.middleGrandChild{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    align-items: flex-start;
+	padding: 10px;
+	padding-left: 20px;
+    width: 48%;
+    height: 220px;
+}
+
+.middleGrandChild button{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+}
+
+.bottomParent{
+	display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.bottomChild{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottomChild ul{
+	list-style-type: square;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.bottomChild p{
+	display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.copyright{
+	display: flex;
+    justify-content: center;
+    margin: 100px 0px 15px;
+}
